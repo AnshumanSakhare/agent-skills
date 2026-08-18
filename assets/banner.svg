@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="agent-skills — 32 production-grade skills for Claude Code, Codex and Cursor">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B14"/>
+      <stop offset="55%" stop-color="#140F2E"/>
+      <stop offset="100%" stop-color="#1B0E2B"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#C4B5FD"/>
+      <stop offset="100%" stop-color="#F0ABFC"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6C5CE7" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#6C5CE7" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#E84393" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#E84393" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6C5CE7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6C5CE7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E84393" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#E84393" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#grid)"/>
+  <ellipse cx="215" cy="90" rx="420" ry="300" fill="url(#glowA)"/>
+  <ellipse cx="1085" cy="330" rx="420" ry="300" fill="url(#glowB)"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+    <text x="80" y="108" fill="#A78BFA" font-size="17" letter-spacing="7" opacity="0.95">AGENT SKILLS REGISTRY</text>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="76" y="212" fill="url(#ink)" font-size="108" font-weight="800" letter-spacing="-3">agent-skills</text>
+    <text x="80" y="264" fill="#CBD5E1" font-size="26" font-weight="500">32 production-grade skills for Claude Code, Codex, Cursor &amp; friends.</text>
+    <text x="80" y="300" fill="#94A3B8" font-size="21" font-weight="400">Landing pages, storefronts, games, audits, financial models — one npx away.</text>
+  </g>
+
+  <rect x="80" y="330" width="560" height="2" fill="url(#rule)"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="17">
+    <rect x="80" y="348" width="452" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="98" y="371" fill="#67E8F9">$</text>
+    <text x="118" y="371" fill="#E2E8F0">npx github:AnshumanSakhare/agent-skills</text>
+  </g>
+
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="880" y="112" width="150" height="38" rx="19" fill="#6C5CE7" fill-opacity="0.16" stroke="#6C5CE7" stroke-opacity="0.5"/>
+    <text x="955" y="137" fill="#C4B5FD" text-anchor="middle">Build &amp; Ship</text>
+
+    <rect x="1046" y="112" width="154" height="38" rx="19" fill="#E84393" fill-opacity="0.16" stroke="#E84393" stroke-opacity="0.5"/>
+    <text x="1123" y="137" fill="#F9A8D4" text-anchor="middle">Design Systems</text>
+
+    <rect x="906" y="162" width="170" height="38" rx="19" fill="#00B894" fill-opacity="0.16" stroke="#00B894" stroke-opacity="0.5"/>
+    <text x="991" y="187" fill="#6EE7B7" text-anchor="middle">Startup &amp; Growth</text>
+
+    <rect x="1092" y="162" width="108" height="38" rx="19" fill="#0984E3" fill-opacity="0.16" stroke="#0984E3" stroke-opacity="0.5"/>
+    <text x="1146" y="187" fill="#93C5FD" text-anchor="middle">Backend</text>
+
+    <rect x="892" y="212" width="184" height="38" rx="19" fill="#E17055" fill-opacity="0.16" stroke="#E17055" stroke-opacity="0.5"/>
+    <text x="984" y="237" fill="#FCA5A5" text-anchor="middle">Docs &amp; Research</text>
+
+    <rect x="1092" y="212" width="108" height="38" rx="19" fill="#94A3B8" fill-opacity="0.16" stroke="#94A3B8" stroke-opacity="0.5"/>
+    <text x="1146" y="237" fill="#CBD5E1" text-anchor="middle">Workflow</text>
+  </g>
+</svg>

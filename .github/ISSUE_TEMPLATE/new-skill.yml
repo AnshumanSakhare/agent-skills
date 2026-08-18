@@ -1,0 +1,60 @@
+name: 💡 Request or propose a skill
+description: Suggest a new skill for the registry, or offer to build one.
+title: "[skill] "
+labels: ["new skill"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. The skills that work best are the ones that *do* something
+        — produce a file, run a check, generate a report — rather than just give advice.
+
+  - type: input
+    id: name
+    attributes:
+      label: Skill name
+      description: Lowercase kebab-case, ending in -skill.
+      placeholder: changelog-writer-skill
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - build — produces a working product
+        - design — art direction and design systems
+        - growth — startup, GTM, pricing, launch
+        - backend — APIs, auth, data, MCP
+        - docs — documentation, research, presentations
+        - workflow — meta-skills that improve how agents work
+        - not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should it do?
+      description: What does an agent produce at the end, and what's painful about doing it by hand today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompts
+    attributes:
+      label: How would someone ask for it?
+      description: The actual phrasings a user would type. These become the trigger description.
+      placeholder: |
+        "write a changelog from the last 20 commits"
+        "what changed since v2.1?"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: offer
+    attributes:
+      label: Would you like to build it?
+      options:
+        - label: I'd like to submit a PR for this myself

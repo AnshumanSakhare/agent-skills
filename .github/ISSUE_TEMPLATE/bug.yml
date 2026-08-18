@@ -1,0 +1,34 @@
+name: 🐛 Something's broken
+description: A skill misbehaves, or the installer fails.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Which skill? (or "installer")
+      placeholder: launchaudit-skill
+    validations:
+      required: true
+
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options: [Claude Code, Claude Desktop, OpenAI Codex, Cursor, opencode, other]
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you asked for, what you got, and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `npx github:AnshumanSakhare/agent-skills doctor`
+      render: text

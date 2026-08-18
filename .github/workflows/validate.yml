@@ -1,0 +1,54 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  registry:
+    name: Registry integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate skill folders, frontmatter and links
+        run: npm run validate
+
+      - name: Check generated docs are in sync
+        run: node scripts/generate-docs.mjs --check
+
+  installer:
+    name: Installer smoke test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: List the catalog
+        run: node bin/agent-skills.js list
+
+      - name: Install every skill into a temp directory
+        run: node bin/agent-skills.js add --all --dir ./tmp-install
+
+      - name: Confirm all 32 landed
+        shell: bash
+        run: |
+          count=$(ls ./tmp-install | wc -l | tr -d ' ')
+          echo "installed: $count"
+          test "$count" = "32"
+
+      - name: Remove them again
+        run: node bin/agent-skills.js remove --all --dir ./tmp-install
