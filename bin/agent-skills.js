@@ -2,9 +2,9 @@
 /**
  * agent-skills — install agent skills into Claude Code, Codex, Cursor and friends.
  *
- *   npx github:AnshumanSakhare/agent-skills
- *   npx github:AnshumanSakhare/agent-skills add launchaudit-skill
- *   npx github:AnshumanSakhare/agent-skills add --all --client claude
+ *   npx github:buildfastwithai/agent-skills
+ *   npx github:buildfastwithai/agent-skills add launchaudit-skill
+ *   npx github:buildfastwithai/agent-skills add --all --client claude
  *
  * Zero dependencies. Node >= 18.
  */
@@ -19,7 +19,7 @@ const readline = require('node:readline');
 const ROOT = path.resolve(__dirname, '..');
 const SKILLS_DIR = path.join(ROOT, 'skills');
 const MANIFEST = path.join(ROOT, 'skills.json');
-const REPO = 'AnshumanSakhare/agent-skills';
+const REPO = 'buildfastwithai/agent-skills';
 
 /* ------------------------------------------------------------------ colour */
 
@@ -56,9 +56,12 @@ function banner() {
   log(c.cyan(ART.join('\n')));
   log(
     '  ' +
-      c.dim('32 production-grade skills for Claude Code, Codex, Cursor & friends')
+      c.dim('32 production-grade Agent Skills for Claude Code, Cowork, Codex & Cursor')
   );
-  log('  ' + c.dim(`github.com/${REPO}`));
+  log(
+    '  ' +
+      c.dim(`by Build Fast with AI  ·  github.com/${REPO}`)
+  );
   log('');
 }
 

@@ -1,18 +1,48 @@
-<div align="center">
+<!--
+  Banner is the shared Build Fast with AI brand asset, referenced from gen-ai-experiments.
+  To vendor it locally instead: copy Banner2.png into assets/ and change the src to "assets/Banner2.png".
+-->
+<p align="center">
+  <a href="https://www.buildfastwithai.com/">
+    <img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" width="900px" alt="BuildFastWithAI: Master Generative AI">
+  </a>
+</p>
 
-<img src="assets/banner.svg" alt="agent-skills — 32 production-grade skills for Claude Code, Codex, Cursor and friends" width="100%">
+<h1 align="center">🧩 Agent Skills</h1>
 
-<br>
+<p align="center">
+  <strong>32 production-grade, installable Agent Skills for Claude Code, Cowork, Codex and Cursor — one <code>npx</code> command away.</strong>
+</p>
 
-[![Stars](https://img.shields.io/github/stars/AnshumanSakhare/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=6C5CE7&labelColor=0B0B14)](https://github.com/AnshumanSakhare/agent-skills/stargazers)
-[![Skills](https://img.shields.io/badge/skills-32-E84393?style=for-the-badge&labelColor=0B0B14)](#the-catalog)
-[![Install](https://img.shields.io/badge/install-one%20npx%20command-00B894?style=for-the-badge&logo=npm&logoColor=white&labelColor=0B0B14)](#quickstart)
-[![License](https://img.shields.io/badge/license-MIT-0984E3?style=for-the-badge&labelColor=0B0B14)](LICENSE)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-E17055?style=for-the-badge&labelColor=0B0B14)](CONTRIBUTING.md)
+<p align="center">
+  <a href="https://www.linkedin.com/company/build-fast-with-ai">
+    <img src="https://img.shields.io/badge/-Follow%20on%20LinkedIn-0077B5?logo=linkedin&style=flat-square" alt="LinkedIn">
+  </a>
+  <a href="https://twitter.com/BuildFastWithAI">
+    <img src="https://img.shields.io/twitter/follow/BuildFastWithAI?style=social" alt="Twitter">
+  </a>
+  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
+    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=social" alt="Star this repo">
+  </a>
+</p>
 
-**[Quickstart](#quickstart)** &nbsp;·&nbsp; **[The catalog](#the-catalog)** &nbsp;·&nbsp; **[Install anywhere](#install-anywhere)** &nbsp;·&nbsp; **[CLI](#cli-reference)** &nbsp;·&nbsp; **[Contributing](CONTRIBUTING.md)**
+<p align="center">
+  <img src="https://img.shields.io/badge/Format-SKILL.md-000000?style=for-the-badge" alt="SKILL.md">
+  <img src="https://img.shields.io/badge/Anthropic_Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude">
+  <img src="https://img.shields.io/badge/Cowork-6E56CF?style=for-the-badge" alt="Cowork">
+  <img src="https://img.shields.io/badge/Codex-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Codex">
+  <img src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white" alt="Cursor">
+  <img src="https://img.shields.io/badge/npx-install%20in%204s-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="npx install">
+  <img src="https://img.shields.io/badge/License-MIT-0984E3?style=for-the-badge" alt="MIT">
+</p>
 
-</div>
+<p align="center">
+  <a href="#quickstart"><b>Quickstart</b></a> &nbsp;·&nbsp;
+  <a href="#the-catalog"><b>The catalog</b></a> &nbsp;·&nbsp;
+  <a href="#install-anywhere"><b>Install anywhere</b></a> &nbsp;·&nbsp;
+  <a href="#cli-reference"><b>CLI</b></a> &nbsp;·&nbsp;
+  <a href="CONTRIBUTING.md"><b>Contributing</b></a>
+</p>
 
 ---
 
@@ -31,20 +61,20 @@ Every skill carries a badge saying which kind it is, so you always know what you
 **Pick skills interactively** — arrow keys, space to select, enter to install:
 
 ```bash
-npx github:AnshumanSakhare/agent-skills
+npx github:buildfastwithai/agent-skills
 ```
 
 **Or grab exactly what you want:**
 
 ```bash
 # one skill
-npx github:AnshumanSakhare/agent-skills add launchaudit-skill
+npx github:buildfastwithai/agent-skills add launchaudit-skill
 
 # a whole category
-npx github:AnshumanSakhare/agent-skills add --category design
+npx github:buildfastwithai/agent-skills add --category design
 
 # everything, into Claude Code
-npx github:AnshumanSakhare/agent-skills add --all --client claude
+npx github:buildfastwithai/agent-skills add --all --client claude
 ```
 
 Then restart your agent and just talk to it:
@@ -72,7 +102,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[✨ Premium UI Revamp](skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. | `add premium-ui-revamp-skill` |
 | **[🗣️ Talking Avatar](skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. | `add talking-avatar-skill` |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category build`</sub>
+<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category build`</sub>
 
 ### 🎨 Design Systems <sub><sup>8 skills</sup></sub>
 
@@ -89,7 +119,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🧱 Neo-Brutalism Web](skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. | `add neo-brutalism-web-skill` |
 | **[📺 Retro Futurist Web](skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. | `add retro-futurist-web-skill` |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category design`</sub>
+<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category design`</sub>
 
 ### 📈 Startup & Growth <sub><sup>3 skills</sup></sub>
 
@@ -101,7 +131,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🎯 Customer Finder](skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. | `add customer-finder-skill` |
 | **[📊 Startup Blueprint](skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. | `add startup-blueprint-skill` |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category growth`</sub>
+<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category growth`</sub>
 
 ### 🧱 Backend & Data <sub><sup>4 skills</sup></sub>
 
@@ -114,7 +144,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🗄️ Mongoose Schema Architect](skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. | `add mongoose-schema-architect-skill` |
 | **[⚡ Next.js Route Handler](skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. | `add nextjs-route-handler-skill` |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category backend`</sub>
+<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category backend`</sub>
 
 ### 📝 Docs & Research <sub><sup>3 skills</sup></sub>
 
@@ -126,7 +156,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🔬 Research Synthesizer](skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. | `add research-synthesizer-skill` |
 | **[🎞️ Deck Outline Generator](skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. | `add deck-outline-generator-skill` |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category docs`</sub>
+<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category docs`</sub>
 
 ### 🛠️ Agent Workflow <sub><sup>8 skills</sup></sub>
 
@@ -143,7 +173,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[✅ Tool Use Validator](skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. | `add tool-use-validator-skill` |
 | **[🐧 Linux Kernel Troubleshooter](skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. | `add linux-kernel-troubleshooter-skill` |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category workflow`</sub>
+<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category workflow`</sub>
 
 <!-- CATALOG:END -->
 
@@ -164,6 +194,8 @@ The installer finds every agent directory on your machine and installs into all 
 
 Multiple at once works too: `--client claude,cursor`. Or hit all of them with `--client all`.
 
+Using **Cowork**? Skills there are account-level rather than on disk — install into `claude` to get the folder, then upload the skill folder from `~/.claude/skills/<name>-skill` in the Cowork UI.
+
 Prefer to do it by hand? Every skill is a plain folder — `git clone` this repo and copy `skills/<name>-skill` into your agent's skills directory. That's the whole install.
 
 <br>
@@ -171,7 +203,7 @@ Prefer to do it by hand? Every skill is a plain folder — `git clone` this repo
 ## CLI reference
 
 ```bash
-npx github:AnshumanSakhare/agent-skills [command] [skills...] [options]
+npx github:buildfastwithai/agent-skills [command] [skills...] [options]
 ```
 
 | Command | What it does |
@@ -238,8 +270,7 @@ agent-skills/
 ├── scripts/
 │   ├── validate.mjs      CI: frontmatter, naming, links, manifest
 │   └── generate-docs.mjs CI: regenerates every README from skills.json
-├── skills.json           the registry — single source of truth
-└── assets/
+└── skills.json           the registry — single source of truth
 ```
 
 Every README in this repo is generated from `skills.json`. Change the manifest, run `npm run docs`, and the catalog table plus all 32 skill READMEs update together. CI fails if they drift.
@@ -259,7 +290,7 @@ New skills are very welcome — especially ones that *do* something rather than 
 The bar: a real `SKILL.md` with a trigger description that earns its place, at least one worked example, and it has to pass `npm run validate`. Full details in **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 ```bash
-git clone https://github.com/AnshumanSakhare/agent-skills
+git clone https://github.com/buildfastwithai/agent-skills
 cd agent-skills
 mkdir -p skills/my-thing-skill        # note the -skill suffix
 # write SKILL.md, add an entry to skills.json
@@ -297,7 +328,7 @@ Run the same <code>add</code> command again. Installs overwrite in place, so re-
 <details>
 <summary><b>Can I install just one category?</b></summary>
 <br>
-<code>npx github:AnshumanSakhare/agent-skills add --category growth</code> — and the same for <code>build</code>, <code>design</code>, <code>backend</code>, <code>docs</code> and <code>workflow</code>.
+<code>npx github:buildfastwithai/agent-skills add --category growth</code> — and the same for <code>build</code>, <code>design</code>, <code>backend</code>, <code>docs</code> and <code>workflow</code>.
 </details>
 
 <details>
@@ -316,16 +347,34 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
 
 ---
 
-<div align="center">
+<p align="center">
+  <a href="https://www.buildfastwithai.com/">
+    <img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" width="700px" alt="BuildFastWithAI: Master Generative AI">
+  </a>
+</p>
 
-### If one of these saved you an afternoon, a star helps other people find them.
+<h3 align="center">If one of these saved you an afternoon, a star helps other people find them.</h3>
 
-<a href="https://github.com/AnshumanSakhare/agent-skills/stargazers">
-<img src="https://img.shields.io/github/stars/AnshumanSakhare/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=6C5CE7&labelColor=0B0B14&label=star%20agent-skills" alt="Star agent-skills">
-</a>
+<p align="center">
+  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
+    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=D97757&labelColor=000000&label=star%20agent-skills" alt="Star agent-skills">
+  </a>
+</p>
 
-<br><br>
+<p align="center">
+  <a href="https://www.linkedin.com/company/build-fast-with-ai">
+    <img src="https://img.shields.io/badge/-Follow%20on%20LinkedIn-0077B5?logo=linkedin&style=flat-square" alt="LinkedIn">
+  </a>
+  <a href="https://twitter.com/BuildFastWithAI">
+    <img src="https://img.shields.io/twitter/follow/BuildFastWithAI?style=social" alt="Twitter">
+  </a>
+</p>
 
-<sub>Built by <a href="https://github.com/AnshumanSakhare">Anshuman Sakhare</a> &nbsp;·&nbsp; <a href="CONTRIBUTING.md">Contribute a skill</a> &nbsp;·&nbsp; <a href="https://github.com/AnshumanSakhare/agent-skills/issues/new?template=new-skill.yml">Request one</a></sub>
-
-</div>
+<p align="center">
+  <sub>
+    Built by <a href="https://www.buildfastwithai.com/"><b>Build Fast with AI</b></a>
+    &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/gen-ai-experiments">Gen-AI-Experiments</a>
+    &nbsp;·&nbsp; <a href="CONTRIBUTING.md">Contribute a skill</a>
+    &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/agent-skills/issues/new?template=new-skill.yml">Request one</a>
+  </sub>
+</p>

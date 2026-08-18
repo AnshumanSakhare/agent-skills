@@ -20,7 +20,7 @@ A skill gets merged if it clears four things:
 ## Setup
 
 ```bash
-git clone https://github.com/AnshumanSakhare/agent-skills
+git clone https://github.com/buildfastwithai/agent-skills
 cd agent-skills
 node --version   # needs >= 18, no install step
 ```

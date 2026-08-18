@@ -1,6 +1,6 @@
 {
   "$schema": "./scripts/skills.schema.json",
-  "repo": "AnshumanSakhare/agent-skills",
+  "repo": "buildfastwithai/agent-skills",
   "categories": [
     { "id": "build",    "icon": "🚀", "name": "Build & Ship",     "blurb": "Point an agent at an idea and get a working, art-directed product back — not a scaffold." },
     { "id": "design",   "icon": "🎨", "name": "Design Systems",   "blurb": "Opinionated art direction. Each one is a full aesthetic your agent can actually hold on to." },

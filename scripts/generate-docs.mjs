@@ -20,6 +20,9 @@ const manifest = JSON.parse(
 );
 const REPO = manifest.repo;
 const REPO_URL = `https://github.com/${REPO}`;
+const ORG_SITE = 'https://www.buildfastwithai.com/';
+const BANNER =
+  'https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png';
 const catById = Object.fromEntries(manifest.categories.map((c) => [c.id, c]));
 
 const CATEGORY_COLOR = {
@@ -92,20 +95,26 @@ function skillReadme(s) {
   const hasExample = Boolean(s.example);
 
   const L = [];
-  L.push('<div align="center">');
-  L.push('');
-  L.push(`<h1>${s.icon}&nbsp;&nbsp;${s.name}</h1>`);
-  L.push('');
-  L.push(`<p><b>${s.tagline}</b></p>`);
-  L.push('');
+  L.push('<p align="center">');
+  L.push(`  <a href="${ORG_SITE}">`);
   L.push(
-    `<a href="${REPO_URL}#quickstart"><img src="${badge('install', 'npx one-liner', '000000', '&logo=npm&logoColor=white')}" alt="install"></a>` +
-      `&nbsp;<img src="${badge('category', cat.name, color)}" alt="${cat.name}">` +
-      `&nbsp;<img src="${badge('type', s.level === 'advanced' ? 'scripts + references' : 'playbook', '2D3436')}" alt="${s.level}">` +
-      `&nbsp;<a href="${REPO_URL}"><img src="${badge('registry', 'agent--skills', '181717', '&logo=github&logoColor=white')}" alt="agent-skills"></a>`
+    `    <img src="${BANNER}" width="780px" alt="BuildFastWithAI: Master Generative AI">`
   );
+  L.push('  </a>');
+  L.push('</p>');
   L.push('');
-  L.push('</div>');
+  L.push(`<h1 align="center">${s.icon} ${s.name}</h1>`);
+  L.push('');
+  L.push(`<p align="center"><strong>${s.tagline}</strong></p>`);
+  L.push('');
+  L.push('<p align="center">');
+  L.push(
+    `  <img src="${badge('Format', 'SKILL.md', '000000')}" alt="SKILL.md">` +
+      `\n  <img src="${badge('Category', cat.name, color)}" alt="${cat.name}">` +
+      `\n  <img src="${badge('Type', s.level === 'advanced' ? 'scripts + references' : 'playbook', '2D3436')}" alt="${s.level}">` +
+      `\n  <a href="${REPO_URL}"><img src="${badge('Registry', 'agent--skills', '181717', '&logo=github&logoColor=white')}" alt="agent-skills"></a>`
+  );
+  L.push('</p>');
   L.push('');
   L.push('---');
   L.push('');
@@ -169,19 +178,19 @@ function skillReadme(s) {
   L.push('');
   L.push('---');
   L.push('');
-  L.push('<div align="center">');
-  L.push('');
+  L.push('<p align="center">');
   L.push(
-    `<sub>One of <b>${manifest.skills.length} skills</b> in <a href="${REPO_URL}">agent-skills</a>.</sub>`
+    `  <sub>One of <b>${manifest.skills.length} skills</b> in <a href="${REPO_URL}">agent-skills</a>, by <a href="${ORG_SITE}">Build Fast with AI</a>.</sub>`
   );
+  L.push('</p>');
   L.push('');
+  L.push('<p align="center">');
   L.push(
-    `<a href="../../README.md">Browse the full catalog</a> &nbsp;&middot;&nbsp; ` +
-      `<a href="${REPO_URL}">⭐ Star the repo</a> &nbsp;&middot;&nbsp; ` +
+    `  <a href="../../README.md">Browse the full catalog</a> &nbsp;·&nbsp; ` +
+      `<a href="${REPO_URL}">⭐ Star the repo</a> &nbsp;·&nbsp; ` +
       `<a href="${REPO_URL}/blob/main/CONTRIBUTING.md">Add your own skill</a>`
   );
-  L.push('');
-  L.push('</div>');
+  L.push('</p>');
   L.push('');
   return L.join('\n');
 }

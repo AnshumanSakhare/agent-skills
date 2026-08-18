@@ -1,11 +1,12 @@
 {
-  "name": "@anshumansakhare/agent-skills",
+  "name": "@buildfastwithai/agent-skills",
   "version": "1.0.0",
-  "description": "32 production-grade agent skills for Claude Code, Codex, Cursor and friends — installable with a single npx command.",
+  "description": "32 production-grade Agent Skills for Claude Code, Cowork, Codex and Cursor \u2014 installable with a single npx command.",
   "keywords": [
     "agent-skills",
     "claude-skills",
     "claude-code",
+    "cowork",
     "codex",
     "cursor",
     "opencode",
@@ -14,19 +15,21 @@
     "llm",
     "anthropic",
     "openai",
+    "mcp",
     "prompt-engineering",
-    "skill-registry"
+    "skill-registry",
+    "buildfastwithai"
   ],
-  "homepage": "https://github.com/AnshumanSakhare/agent-skills#readme",
+  "homepage": "https://github.com/buildfastwithai/agent-skills#readme",
   "bugs": {
-    "url": "https://github.com/AnshumanSakhare/agent-skills/issues"
+    "url": "https://github.com/buildfastwithai/agent-skills/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnshumanSakhare/agent-skills.git"
+    "url": "git+https://github.com/buildfastwithai/agent-skills.git"
   },
   "license": "MIT",
-  "author": "Anshuman Sakhare",
+  "author": "Build Fast with AI (https://www.buildfastwithai.com/)",
   "type": "commonjs",
   "bin": {
     "agent-skills": "bin/agent-skills.js"
