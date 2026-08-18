@@ -2,9 +2,12 @@
 /**
  * agent-skills — install agent skills into Claude Code, Codex, Cursor and friends.
  *
- *   npx github:buildfastwithai/agent-skills
- *   npx github:buildfastwithai/agent-skills add launchaudit-skill
- *   npx github:buildfastwithai/agent-skills add --all --client claude
+ *   npx github:<owner>/agent-skills
+ *   npx github:<owner>/agent-skills add launchaudit-skill
+ *   npx github:<owner>/agent-skills add --all --client claude
+ *
+ * The owner is read from skills.json at runtime, so this file never needs
+ * editing when the project moves between accounts or orgs.
  *
  * Zero dependencies. Node >= 18.
  */
@@ -19,7 +22,16 @@ const readline = require('node:readline');
 const ROOT = path.resolve(__dirname, '..');
 const SKILLS_DIR = path.join(ROOT, 'skills');
 const MANIFEST = path.join(ROOT, 'skills.json');
-const REPO = 'buildfastwithai/agent-skills';
+// The repo slug lives in skills.json so `npm run set-repo` can move the whole
+// project between owners in one command. Read it directly (not via manifest())
+// so the constant is available inside manifest()'s own error path.
+const REPO = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(MANIFEST, 'utf8')).repo;
+  } catch {
+    return 'AnshumanSakhare/agent-skills';
+  }
+})();
 
 /* ------------------------------------------------------------------ colour */
 

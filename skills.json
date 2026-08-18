@@ -1,13 +1,43 @@
 {
   "$schema": "./scripts/skills.schema.json",
-  "repo": "buildfastwithai/agent-skills",
+  "repo": "AnshumanSakhare/agent-skills",
   "categories": [
-    { "id": "build",    "icon": "🚀", "name": "Build & Ship",     "blurb": "Point an agent at an idea and get a working, art-directed product back — not a scaffold." },
-    { "id": "design",   "icon": "🎨", "name": "Design Systems",   "blurb": "Opinionated art direction. Each one is a full aesthetic your agent can actually hold on to." },
-    { "id": "growth",   "icon": "📈", "name": "Startup & Growth", "blurb": "Evidence-backed GTM work: who buys, whether you're ready, and how the money adds up." },
-    { "id": "backend",  "icon": "🧱", "name": "Backend & Data",   "blurb": "Auth, schemas, route handlers and MCP servers that survive contact with production." },
-    { "id": "docs",     "icon": "📝", "name": "Docs & Research",  "blurb": "Turn scattered sources and half-finished repos into something a stranger can read." },
-    { "id": "workflow", "icon": "🛠️", "name": "Agent Workflow",   "blurb": "Meta-skills that make every other agent run tighter — critique, handoff, commits, test strength." }
+    {
+      "id": "build",
+      "icon": "🚀",
+      "name": "Build & Ship",
+      "blurb": "Point an agent at an idea and get a working, art-directed product back — not a scaffold."
+    },
+    {
+      "id": "design",
+      "icon": "🎨",
+      "name": "Design Systems",
+      "blurb": "Opinionated art direction. Each one is a full aesthetic your agent can actually hold on to."
+    },
+    {
+      "id": "growth",
+      "icon": "📈",
+      "name": "Startup & Growth",
+      "blurb": "Evidence-backed GTM work: who buys, whether you're ready, and how the money adds up."
+    },
+    {
+      "id": "backend",
+      "icon": "🧱",
+      "name": "Backend & Data",
+      "blurb": "Auth, schemas, route handlers and MCP servers that survive contact with production."
+    },
+    {
+      "id": "docs",
+      "icon": "📝",
+      "name": "Docs & Research",
+      "blurb": "Turn scattered sources and half-finished repos into something a stranger can read."
+    },
+    {
+      "id": "workflow",
+      "icon": "🛠️",
+      "name": "Agent Workflow",
+      "blurb": "Meta-skills that make every other agent run tighter — critique, handoff, commits, test strength."
+    }
   ],
   "skills": [
     {
@@ -31,8 +61,18 @@
         "Audit https://example.com and rewrite the hero and CTA for a free-trial conversion.",
         "Generate a launch page for a developer tool, minimal theme, PAS copy framework."
       ],
-      "outputs": ["Single-file production HTML page", "Conversion audit report", "CTA + page-speed analysis"],
-      "tags": ["landing-page", "conversion", "copywriting", "seo", "html"]
+      "outputs": [
+        "Single-file production HTML page",
+        "Conversion audit report",
+        "CTA + page-speed analysis"
+      ],
+      "tags": [
+        "landing-page",
+        "conversion",
+        "copywriting",
+        "seo",
+        "html"
+      ]
     },
     {
       "id": "crazy-ecommerce-builder-skill",
@@ -55,8 +95,17 @@
         "Turn this brand brief into an ecommerce site with original product photography.",
         "Redesign my Shopify landing experience as something nobody would guess came from a template."
       ],
-      "outputs": ["Working responsive storefront", "Original generated product imagery", "Documented creative thesis"],
-      "tags": ["ecommerce", "art-direction", "imagegen", "storefront"]
+      "outputs": [
+        "Working responsive storefront",
+        "Original generated product imagery",
+        "Documented creative thesis"
+      ],
+      "tags": [
+        "ecommerce",
+        "art-direction",
+        "imagegen",
+        "storefront"
+      ]
     },
     {
       "id": "html-game-generator-skill",
@@ -79,8 +128,17 @@
         "Build a tower defense game inspired by Kingdom Rush, single HTML file.",
         "Take my existing game.html and add a wave system, upgrades and a boss fight."
       ],
-      "outputs": ["One playable .html file", "Procedural art and synthesised sound", "Save/load built in"],
-      "tags": ["games", "vanilla-js", "single-file", "canvas"]
+      "outputs": [
+        "One playable .html file",
+        "Procedural art and synthesised sound",
+        "Save/load built in"
+      ],
+      "tags": [
+        "games",
+        "vanilla-js",
+        "single-file",
+        "canvas"
+      ]
     },
     {
       "id": "react-screenshot-recreator-skill",
@@ -103,8 +161,17 @@
         "Turn this Figma export into React + Tailwind.",
         "Clone this pricing table exactly, then make it responsive."
       ],
-      "outputs": ["React + TypeScript + Tailwind components", "Visual audit against the original", "Responsive behaviour"],
-      "tags": ["react", "tailwind", "typescript", "design-to-code"]
+      "outputs": [
+        "React + TypeScript + Tailwind components",
+        "Visual audit against the original",
+        "Responsive behaviour"
+      ],
+      "tags": [
+        "react",
+        "tailwind",
+        "typescript",
+        "design-to-code"
+      ]
     },
     {
       "id": "premium-ui-revamp-skill",
@@ -127,8 +194,17 @@
         "Revamp my Next.js marketing site's visual design without changing behaviour.",
         "Audit the UI in ./src and give me a prioritised polish pass, then implement it."
       ],
-      "outputs": ["Implemented UI changes in your stack", "Design audit with rationale", "Quality-rubric verification"],
-      "tags": ["ui", "redesign", "refactor", "accessibility"]
+      "outputs": [
+        "Implemented UI changes in your stack",
+        "Design audit with rationale",
+        "Quality-rubric verification"
+      ],
+      "tags": [
+        "ui",
+        "redesign",
+        "refactor",
+        "accessibility"
+      ]
     },
     {
       "id": "talking-avatar-skill",
@@ -151,10 +227,19 @@
         "Build a voice companion with a grizzled 1940s detective character.",
         "Add lip-synced avatar output to my existing OpenAI Realtime app."
       ],
-      "outputs": ["Deployable Vite/Next.js realtime app", "Generated portrait + mouth sprites", "Test suite"],
-      "tags": ["realtime", "voice", "avatar", "openai", "lip-sync"]
+      "outputs": [
+        "Deployable Vite/Next.js realtime app",
+        "Generated portrait + mouth sprites",
+        "Test suite"
+      ],
+      "tags": [
+        "realtime",
+        "voice",
+        "avatar",
+        "openai",
+        "lip-sync"
+      ]
     },
-
     {
       "id": "boutique-frontend-designer-skill",
       "name": "Boutique Frontend Designer",
@@ -175,8 +260,17 @@
         "Design a landing page with a Tactile Industrial identity.",
         "Give this React component a distinct visual point of view."
       ],
-      "outputs": ["Art-directed components", "A committed visual identity", "Production-grade implementation"],
-      "tags": ["design", "react", "art-direction", "anti-slop"]
+      "outputs": [
+        "Art-directed components",
+        "A committed visual identity",
+        "Production-grade implementation"
+      ],
+      "tags": [
+        "design",
+        "react",
+        "art-direction",
+        "anti-slop"
+      ]
     },
     {
       "id": "tailwind-component-factory-skill",
@@ -198,8 +292,17 @@
         "Generate a headless modal primitive I can theme.",
         "Make this dropdown keyboard-navigable and ARIA-correct."
       ],
-      "outputs": ["Reusable component primitives", "Documented API surface", "Accessibility notes"],
-      "tags": ["tailwind", "accessibility", "components", "aria"]
+      "outputs": [
+        "Reusable component primitives",
+        "Documented API surface",
+        "Accessibility notes"
+      ],
+      "tags": [
+        "tailwind",
+        "accessibility",
+        "components",
+        "aria"
+      ]
     },
     {
       "id": "bold-saas-marketing-ui-skill",
@@ -221,8 +324,16 @@
         "Make my homepage bolder without losing clarity.",
         "Build a launch page with strong CTA architecture and social proof."
       ],
-      "outputs": ["Conversion-focused marketing page", "CTA and proof strategy"],
-      "tags": ["saas", "marketing", "conversion", "landing-page"]
+      "outputs": [
+        "Conversion-focused marketing page",
+        "CTA and proof strategy"
+      ],
+      "tags": [
+        "saas",
+        "marketing",
+        "conversion",
+        "landing-page"
+      ]
     },
     {
       "id": "editorial-web-layout-skill",
@@ -244,8 +355,16 @@
         "Give my blog a magazine layout with asymmetric columns.",
         "Build a case study page that reads like a print feature."
       ],
-      "outputs": ["Typography-led layouts", "Editorial component set"],
-      "tags": ["typography", "editorial", "layout", "content"]
+      "outputs": [
+        "Typography-led layouts",
+        "Editorial component set"
+      ],
+      "tags": [
+        "typography",
+        "editorial",
+        "layout",
+        "content"
+      ]
     },
     {
       "id": "glass-ui-system-skill",
@@ -267,8 +386,16 @@
         "Design a frosted-glass nav and card system for my app.",
         "Make this UI feel premium and atmospheric without hurting legibility."
       ],
-      "outputs": ["Glass design system", "Depth and lighting rules"],
-      "tags": ["glassmorphism", "design-system", "depth", "ui"]
+      "outputs": [
+        "Glass design system",
+        "Depth and lighting rules"
+      ],
+      "tags": [
+        "glassmorphism",
+        "design-system",
+        "depth",
+        "ui"
+      ]
     },
     {
       "id": "minimal-luxury-ui-skill",
@@ -290,8 +417,16 @@
         "Make this fashion ecommerce site feel high-end and restrained.",
         "Redesign my product page with luxury minimalism."
       ],
-      "outputs": ["Refined minimal interface", "Spacing and type system"],
-      "tags": ["luxury", "minimal", "typography", "premium"]
+      "outputs": [
+        "Refined minimal interface",
+        "Spacing and type system"
+      ],
+      "tags": [
+        "luxury",
+        "minimal",
+        "typography",
+        "premium"
+      ]
     },
     {
       "id": "neo-brutalism-web-skill",
@@ -313,8 +448,16 @@
         "Make this portfolio loud and memorable.",
         "Give my app a brutalist design system with hard shadows and thick borders."
       ],
-      "outputs": ["Brutalist component system", "High-contrast palette"],
-      "tags": ["brutalism", "bold", "contrast", "personality"]
+      "outputs": [
+        "Brutalist component system",
+        "High-contrast palette"
+      ],
+      "tags": [
+        "brutalism",
+        "bold",
+        "contrast",
+        "personality"
+      ]
     },
     {
       "id": "retro-futurist-web-skill",
@@ -336,10 +479,17 @@
         "Give my dashboard an 80s computing aesthetic that's still readable.",
         "Design a synthwave landing page with CRT effects."
       ],
-      "outputs": ["Retro-tech interface system", "Effect and palette rules"],
-      "tags": ["retro", "cyberpunk", "crt", "terminal"]
+      "outputs": [
+        "Retro-tech interface system",
+        "Effect and palette rules"
+      ],
+      "tags": [
+        "retro",
+        "cyberpunk",
+        "crt",
+        "terminal"
+      ]
     },
-
     {
       "id": "launchaudit-skill",
       "name": "LaunchAudit",
@@ -361,8 +511,17 @@
         "Run a deep audit on my site — pricing, docs, trust and conversion paths, desktop and mobile.",
         "Compare my current site with the redesign at [URL] in before-after mode."
       ],
-      "outputs": ["Standalone HTML report", "Structured JSON source", "Seven-day repair plan"],
-      "tags": ["audit", "launch", "conversion", "startup"],
+      "outputs": [
+        "Standalone HTML report",
+        "Structured JSON source",
+        "Seven-day repair plan"
+      ],
+      "tags": [
+        "audit",
+        "launch",
+        "conversion",
+        "startup"
+      ],
       "example": "examples/sarvam-ai-launchaudit.html"
     },
     {
@@ -386,8 +545,17 @@
         "Who should I talk to for design-partner interviews for this product idea?",
         "Find people publicly complaining about the problem my tool solves."
       ],
-      "outputs": ["Responsive HTML prospect report", "Evidence-linked prospect list", "Draft outreach openers"],
-      "tags": ["gtm", "prospecting", "icp", "research"],
+      "outputs": [
+        "Responsive HTML prospect report",
+        "Evidence-linked prospect list",
+        "Draft outreach openers"
+      ],
+      "tags": [
+        "gtm",
+        "prospecting",
+        "icp",
+        "research"
+      ],
       "example": "examples/sarvam-customer-finder-report.html"
     },
     {
@@ -411,11 +579,20 @@
         "Should this product be usage-based or seat-based? Model both.",
         "Give me a 12-month financial model and a 90-day roadmap for my SaaS idea."
       ],
-      "outputs": ["Markdown business plan", "Formula-driven .xlsx model", "90-day roadmap CSV", "HTML report"],
-      "tags": ["business-plan", "pricing", "financial-model", "saas"],
+      "outputs": [
+        "Markdown business plan",
+        "Formula-driven .xlsx model",
+        "90-day roadmap CSV",
+        "HTML report"
+      ],
+      "tags": [
+        "business-plan",
+        "pricing",
+        "financial-model",
+        "saas"
+      ],
       "example": "examples/startupblueprint-report.html"
     },
-
     {
       "id": "mcp-server-builder-skill",
       "name": "MCP Server Builder",
@@ -436,8 +613,17 @@
         "Design the tool schema for an MCP server wrapping the Stripe API.",
         "Review my MCP server for security issues before I ship it."
       ],
-      "outputs": ["MCP server implementation", "Tool schema design", "Security review"],
-      "tags": ["mcp", "agents", "api", "security"]
+      "outputs": [
+        "MCP server implementation",
+        "Tool schema design",
+        "Security review"
+      ],
+      "tags": [
+        "mcp",
+        "agents",
+        "api",
+        "security"
+      ]
     },
     {
       "id": "mern-auth-best-practices-skill",
@@ -459,8 +645,18 @@
         "Set up NextAuth with role-based route protection.",
         "Review my auth flow for token and cookie vulnerabilities."
       ],
-      "outputs": ["Auth implementation", "Cookie and session strategy", "Access-control model"],
-      "tags": ["auth", "jwt", "nextauth", "security", "mern"]
+      "outputs": [
+        "Auth implementation",
+        "Cookie and session strategy",
+        "Access-control model"
+      ],
+      "tags": [
+        "auth",
+        "jwt",
+        "nextauth",
+        "security",
+        "mern"
+      ]
     },
     {
       "id": "mongoose-schema-architect-skill",
@@ -482,8 +678,17 @@
         "My queries are slow — refactor these schemas and indexes.",
         "Should this be embedded or referenced? Here's my access pattern."
       ],
-      "outputs": ["Schema definitions", "Index strategy", "Population plan"],
-      "tags": ["mongodb", "mongoose", "database", "indexing"]
+      "outputs": [
+        "Schema definitions",
+        "Index strategy",
+        "Population plan"
+      ],
+      "tags": [
+        "mongodb",
+        "mongoose",
+        "database",
+        "indexing"
+      ]
     },
     {
       "id": "nextjs-route-handler-skill",
@@ -505,10 +710,18 @@
         "Convert these API routes to App Router server actions with Zod validation.",
         "Add proper error handling and auth to my Next.js API layer."
       ],
-      "outputs": ["Route handlers / server actions", "Zod schemas", "Error contract"],
-      "tags": ["nextjs", "edge", "zod", "api"]
+      "outputs": [
+        "Route handlers / server actions",
+        "Zod schemas",
+        "Error contract"
+      ],
+      "tags": [
+        "nextjs",
+        "edge",
+        "zod",
+        "api"
+      ]
     },
-
     {
       "id": "readme-architect-skill",
       "name": "README Architect",
@@ -529,8 +742,17 @@
         "My README is weak — rewrite it for open-source readiness.",
         "Generate contribution guidance and badges for this project."
       ],
-      "outputs": ["Complete README.md", "CONTRIBUTING guidance", "Badge set"],
-      "tags": ["documentation", "readme", "open-source", "github"]
+      "outputs": [
+        "Complete README.md",
+        "CONTRIBUTING guidance",
+        "Badge set"
+      ],
+      "tags": [
+        "documentation",
+        "readme",
+        "open-source",
+        "github"
+      ]
     },
     {
       "id": "research-synthesizer-skill",
@@ -552,8 +774,17 @@
         "Compare these five frameworks with evidence and tell me what to pick.",
         "Deep dive on this topic with citations and confidence notes."
       ],
-      "outputs": ["Cited Markdown report", "Source list", "Confidence notes"],
-      "tags": ["research", "citations", "synthesis", "analysis"]
+      "outputs": [
+        "Cited Markdown report",
+        "Source list",
+        "Confidence notes"
+      ],
+      "tags": [
+        "research",
+        "citations",
+        "synthesis",
+        "analysis"
+      ]
     },
     {
       "id": "deck-outline-generator-skill",
@@ -575,10 +806,18 @@
         "Build a product strategy deck outline with image prompts.",
         "Turn this doc into an investor narrative with slide-by-slide guidance."
       ],
-      "outputs": ["Slide-by-slide outline", "Per-slide image prompts", "Speaker notes"],
-      "tags": ["presentation", "pitch-deck", "storytelling", "imagegen"]
+      "outputs": [
+        "Slide-by-slide outline",
+        "Per-slide image prompts",
+        "Speaker notes"
+      ],
+      "tags": [
+        "presentation",
+        "pitch-deck",
+        "storytelling",
+        "imagegen"
+      ]
     },
-
     {
       "id": "ship-it-skill",
       "name": "Ship It",
@@ -600,8 +839,18 @@
         "Make this repo public-ready — I want to post it on X tomorrow.",
         "Clean up this project for open-source release and write the README."
       ],
-      "outputs": ["Restructured repo", "Launch-ready README", "Flagship example", "Licence"],
-      "tags": ["open-source", "readme", "launch", "packaging"]
+      "outputs": [
+        "Restructured repo",
+        "Launch-ready README",
+        "Flagship example",
+        "Licence"
+      ],
+      "tags": [
+        "open-source",
+        "readme",
+        "launch",
+        "packaging"
+      ]
     },
     {
       "id": "claude-to-codex-handoff-skill",
@@ -623,8 +872,17 @@
         "Package everything up so I can continue this in Cursor.",
         "Export this session for a teammate who wasn't here."
       ],
-      "outputs": ["AGENTS.md", "HANDOFF.md", "Zipped context bundle"],
-      "tags": ["handoff", "context", "codex", "interop"]
+      "outputs": [
+        "AGENTS.md",
+        "HANDOFF.md",
+        "Zipped context bundle"
+      ],
+      "tags": [
+        "handoff",
+        "context",
+        "codex",
+        "interop"
+      ]
     },
     {
       "id": "test-strength-skill",
@@ -647,8 +905,17 @@
         "Do my tests actually cover the code I changed in this branch?",
         "Find surviving mutants and write tests that kill them."
       ],
-      "outputs": ["Mutation report", "Surviving-mutant analysis", "Proposed + verified tests"],
-      "tags": ["testing", "mutation-testing", "pytest", "quality"]
+      "outputs": [
+        "Mutation report",
+        "Surviving-mutant analysis",
+        "Proposed + verified tests"
+      ],
+      "tags": [
+        "testing",
+        "mutation-testing",
+        "pytest",
+        "quality"
+      ]
     },
     {
       "id": "agent-output-critic-skill",
@@ -670,8 +937,17 @@
         "Check this generated code for hallucinated APIs and security issues.",
         "QA this response against the original spec."
       ],
-      "outputs": ["Structured critique", "Severity-ranked issues", "Ship / don't-ship verdict"],
-      "tags": ["qa", "review", "hallucination", "safety"]
+      "outputs": [
+        "Structured critique",
+        "Severity-ranked issues",
+        "Ship / don't-ship verdict"
+      ],
+      "tags": [
+        "qa",
+        "review",
+        "hallucination",
+        "safety"
+      ]
     },
     {
       "id": "git-conventional-commits-skill",
@@ -693,8 +969,17 @@
         "Draft a PR description from this diff with a test plan.",
         "Split my staged changes into a sensible commit plan."
       ],
-      "outputs": ["Conventional commit set", "Commit split plan", "Full PR draft"],
-      "tags": ["git", "commits", "pull-request", "changelog"]
+      "outputs": [
+        "Conventional commit set",
+        "Commit split plan",
+        "Full PR draft"
+      ],
+      "tags": [
+        "git",
+        "commits",
+        "pull-request",
+        "changelog"
+      ]
     },
     {
       "id": "prompt-optimizer-cot-skill",
@@ -716,8 +1001,16 @@
         "Turn this vague task into a proper CoT prompt.",
         "Why does this prompt fail, and what should it be instead?"
       ],
-      "outputs": ["Rewritten prompt", "Failure diagnosis", "Example set"],
-      "tags": ["prompting", "chain-of-thought", "reliability"]
+      "outputs": [
+        "Rewritten prompt",
+        "Failure diagnosis",
+        "Example set"
+      ],
+      "tags": [
+        "prompting",
+        "chain-of-thought",
+        "reliability"
+      ]
     },
     {
       "id": "tool-use-validator-skill",
@@ -739,8 +1032,17 @@
         "Why is my function-calling payload being rejected?",
         "Add schema validation at my agent's tool boundary."
       ],
-      "outputs": ["Validation verdict", "Path-level error report", "Corrected payload"],
-      "tags": ["function-calling", "json-schema", "validation", "agents"]
+      "outputs": [
+        "Validation verdict",
+        "Path-level error report",
+        "Corrected payload"
+      ],
+      "tags": [
+        "function-calling",
+        "json-schema",
+        "validation",
+        "agents"
+      ]
     },
     {
       "id": "linux-kernel-troubleshooter-skill",
@@ -762,8 +1064,17 @@
         "Wi-Fi adapter disappeared after upgrading — help me debug it.",
         "I'm getting a kernel panic on startup. Walk me through recovery."
       ],
-      "outputs": ["Diagnosis path", "Recovery commands", "Rollback plan"],
-      "tags": ["linux", "ubuntu", "kernel", "debugging"]
+      "outputs": [
+        "Diagnosis path",
+        "Recovery commands",
+        "Rollback plan"
+      ],
+      "tags": [
+        "linux",
+        "ubuntu",
+        "kernel",
+        "debugging"
+      ]
     }
   ]
 }

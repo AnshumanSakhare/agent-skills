@@ -21,8 +21,8 @@
   <a href="https://twitter.com/BuildFastWithAI">
     <img src="https://img.shields.io/twitter/follow/BuildFastWithAI?style=social" alt="Twitter">
   </a>
-  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
-    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=social" alt="Star this repo">
+  <a href="https://github.com/AnshumanSakhare/agent-skills/stargazers">
+    <img src="https://img.shields.io/github/stars/AnshumanSakhare/agent-skills?style=social" alt="Star this repo">
   </a>
 </p>
 
@@ -61,20 +61,20 @@ Every skill carries a badge saying which kind it is, so you always know what you
 **Pick skills interactively** — arrow keys, space to select, enter to install:
 
 ```bash
-npx github:buildfastwithai/agent-skills
+npx github:AnshumanSakhare/agent-skills
 ```
 
 **Or grab exactly what you want:**
 
 ```bash
 # one skill
-npx github:buildfastwithai/agent-skills add launchaudit-skill
+npx github:AnshumanSakhare/agent-skills add launchaudit-skill
 
 # a whole category
-npx github:buildfastwithai/agent-skills add --category design
+npx github:AnshumanSakhare/agent-skills add --category design
 
 # everything, into Claude Code
-npx github:buildfastwithai/agent-skills add --all --client claude
+npx github:AnshumanSakhare/agent-skills add --all --client claude
 ```
 
 Then restart your agent and just talk to it:
@@ -102,7 +102,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[✨ Premium UI Revamp](skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. | `add premium-ui-revamp-skill` |
 | **[🗣️ Talking Avatar](skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. | `add talking-avatar-skill` |
 
-<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category build`</sub>
+<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category build`</sub>
 
 ### 🎨 Design Systems <sub><sup>8 skills</sup></sub>
 
@@ -119,7 +119,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🧱 Neo-Brutalism Web](skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. | `add neo-brutalism-web-skill` |
 | **[📺 Retro Futurist Web](skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. | `add retro-futurist-web-skill` |
 
-<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category design`</sub>
+<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category design`</sub>
 
 ### 📈 Startup & Growth <sub><sup>3 skills</sup></sub>
 
@@ -131,7 +131,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🎯 Customer Finder](skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. | `add customer-finder-skill` |
 | **[📊 Startup Blueprint](skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. | `add startup-blueprint-skill` |
 
-<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category growth`</sub>
+<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category growth`</sub>
 
 ### 🧱 Backend & Data <sub><sup>4 skills</sup></sub>
 
@@ -144,7 +144,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🗄️ Mongoose Schema Architect](skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. | `add mongoose-schema-architect-skill` |
 | **[⚡ Next.js Route Handler](skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. | `add nextjs-route-handler-skill` |
 
-<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category backend`</sub>
+<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category backend`</sub>
 
 ### 📝 Docs & Research <sub><sup>3 skills</sup></sub>
 
@@ -156,7 +156,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[🔬 Research Synthesizer](skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. | `add research-synthesizer-skill` |
 | **[🎞️ Deck Outline Generator](skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. | `add deck-outline-generator-skill` |
 
-<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category docs`</sub>
+<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category docs`</sub>
 
 ### 🛠️ Agent Workflow <sub><sup>8 skills</sup></sub>
 
@@ -173,7 +173,7 @@ No config file. No API key. No account. The installer auto-detects Claude Code, 
 | **[✅ Tool Use Validator](skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. | `add tool-use-validator-skill` |
 | **[🐧 Linux Kernel Troubleshooter](skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. | `add linux-kernel-troubleshooter-skill` |
 
-<sub>Install the whole category: `npx github:buildfastwithai/agent-skills add --category workflow`</sub>
+<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category workflow`</sub>
 
 <!-- CATALOG:END -->
 
@@ -203,7 +203,7 @@ Prefer to do it by hand? Every skill is a plain folder — `git clone` this repo
 ## CLI reference
 
 ```bash
-npx github:buildfastwithai/agent-skills [command] [skills...] [options]
+npx github:AnshumanSakhare/agent-skills [command] [skills...] [options]
 ```
 
 | Command | What it does |
@@ -281,6 +281,13 @@ npm run docs       # regenerate all READMEs
 npm run check      # both, in --check mode (what CI runs)
 ```
 
+Moving the project to a different GitHub account or org? The slug lives in `skills.json` and the CLI reads it at runtime, so it's one command:
+
+```bash
+npm run set-repo -- neworg/agent-skills
+git remote set-url origin https://github.com/neworg/agent-skills.git
+```
+
 <br>
 
 ## Contributing
@@ -290,7 +297,7 @@ New skills are very welcome — especially ones that *do* something rather than 
 The bar: a real `SKILL.md` with a trigger description that earns its place, at least one worked example, and it has to pass `npm run validate`. Full details in **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 ```bash
-git clone https://github.com/buildfastwithai/agent-skills
+git clone https://github.com/AnshumanSakhare/agent-skills
 cd agent-skills
 mkdir -p skills/my-thing-skill        # note the -skill suffix
 # write SKILL.md, add an entry to skills.json
@@ -328,7 +335,7 @@ Run the same <code>add</code> command again. Installs overwrite in place, so re-
 <details>
 <summary><b>Can I install just one category?</b></summary>
 <br>
-<code>npx github:buildfastwithai/agent-skills add --category growth</code> — and the same for <code>build</code>, <code>design</code>, <code>backend</code>, <code>docs</code> and <code>workflow</code>.
+<code>npx github:AnshumanSakhare/agent-skills add --category growth</code> — and the same for <code>build</code>, <code>design</code>, <code>backend</code>, <code>docs</code> and <code>workflow</code>.
 </details>
 
 <details>
@@ -356,8 +363,8 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
 <h3 align="center">If one of these saved you an afternoon, a star helps other people find them.</h3>
 
 <p align="center">
-  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
-    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=D97757&labelColor=000000&label=star%20agent-skills" alt="Star agent-skills">
+  <a href="https://github.com/AnshumanSakhare/agent-skills/stargazers">
+    <img src="https://img.shields.io/github/stars/AnshumanSakhare/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=D97757&labelColor=000000&label=star%20agent-skills" alt="Star agent-skills">
   </a>
 </p>
 
@@ -375,6 +382,6 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
     Built by <a href="https://www.buildfastwithai.com/"><b>Build Fast with AI</b></a>
     &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/gen-ai-experiments">Gen-AI-Experiments</a>
     &nbsp;·&nbsp; <a href="CONTRIBUTING.md">Contribute a skill</a>
-    &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/agent-skills/issues/new?template=new-skill.yml">Request one</a>
+    &nbsp;·&nbsp; <a href="https://github.com/AnshumanSakhare/agent-skills/issues/new?template=new-skill.yml">Request one</a>
   </sub>
 </p>

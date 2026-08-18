@@ -30,5 +30,5 @@ body:
   - type: textarea
     id: doctor
     attributes:
-      label: Output of `npx github:buildfastwithai/agent-skills doctor`
+      label: Output of `npx github:AnshumanSakhare/agent-skills doctor`
       render: text
