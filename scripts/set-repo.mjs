@@ -41,7 +41,6 @@ if (current === target) {
 const FILES = [
   'README.md',
   'CONTRIBUTING.md',
-  'package.json',
   '.github/ISSUE_TEMPLATE/bug.yml',
   '.github/PULL_REQUEST_TEMPLATE.md',
 ];
@@ -62,6 +61,18 @@ for (const rel of FILES) {
   if (before === after) continue;
   fs.writeFileSync(file, after);
   console.log(`  update  ${rel}`);
+}
+
+// package.json is edited structurally, never by string replace: the npm scope
+// is lowercase-only and deliberately does not follow the GitHub owner.
+const pkgPath = path.join(ROOT, 'package.json');
+if (fs.existsSync(pkgPath)) {
+  const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
+  pkg.homepage = `https://github.com/${target}#readme`;
+  pkg.bugs = { url: `https://github.com/${target}/issues` };
+  pkg.repository = { type: 'git', url: `git+https://github.com/${target}.git` };
+  fs.writeFileSync(pkgPath, `${JSON.stringify(pkg, null, 2)}\n`);
+  console.log('  update  package.json');
 }
 
 console.log('');

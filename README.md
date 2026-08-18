@@ -1,17 +1,11 @@
-<!--
-  Banner is the shared Build Fast with AI brand asset, referenced from gen-ai-experiments.
-  To vendor it locally instead: copy Banner2.png into assets/ and change the src to "assets/Banner2.png".
--->
 <p align="center">
   <a href="https://www.buildfastwithai.com/">
-    <img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" width="900px" alt="BuildFastWithAI: Master Generative AI">
+    <img src="assets/banner.jpg" width="100%" alt="Agent Skills by Build Fast with AI — 32 production-grade skills for Claude, Codex and Cursor">
   </a>
 </p>
 
-<h1 align="center">🧩 Agent Skills</h1>
-
 <p align="center">
-  <strong>32 production-grade, installable Agent Skills for Claude Code, Cowork, Codex and Cursor — one <code>npx</code> command away.</strong>
+  <strong>Drop-in <code>SKILL.md</code> capabilities for your coding agent.<br>Six categories, one <code>npx</code> command, zero config.</strong>
 </p>
 
 <p align="center">
@@ -270,7 +264,8 @@ agent-skills/
 ├── scripts/
 │   ├── validate.mjs      CI: frontmatter, naming, links, manifest
 │   └── generate-docs.mjs CI: regenerates every README from skills.json
-└── skills.json           the registry — single source of truth
+├── skills.json           the registry — single source of truth
+└── assets/banner.jpg     the header artwork
 ```
 
 Every README in this repo is generated from `skills.json`. Change the manifest, run `npm run docs`, and the catalog table plus all 32 skill READMEs update together. CI fails if they drift.
@@ -353,12 +348,6 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
 <br>
 
 ---
-
-<p align="center">
-  <a href="https://www.buildfastwithai.com/">
-    <img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" width="700px" alt="BuildFastWithAI: Master Generative AI">
-  </a>
-</p>
 
 <h3 align="center">If one of these saved you an afternoon, a star helps other people find them.</h3>
 

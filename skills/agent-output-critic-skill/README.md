@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.buildfastwithai.com/">
-    <img src="https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png" width="780px" alt="BuildFastWithAI: Master Generative AI">
+    <img src="../../assets/banner.jpg" width="100%" alt="Agent Skills by Build Fast with AI">
   </a>
 </p>
 

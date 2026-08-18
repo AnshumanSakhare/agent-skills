@@ -21,8 +21,8 @@ const manifest = JSON.parse(
 const REPO = manifest.repo;
 const REPO_URL = `https://github.com/${REPO}`;
 const ORG_SITE = 'https://www.buildfastwithai.com/';
-const BANNER =
-  'https://raw.githubusercontent.com/buildfastwithai/gen-ai-experiments/main/assets/Banner2.png';
+// Skill READMEs live at skills/<id>/README.md, so the banner is two levels up.
+const BANNER = '../../assets/banner.jpg';
 const catById = Object.fromEntries(manifest.categories.map((c) => [c.id, c]));
 
 const CATEGORY_COLOR = {
@@ -98,7 +98,7 @@ function skillReadme(s) {
   L.push('<p align="center">');
   L.push(`  <a href="${ORG_SITE}">`);
   L.push(
-    `    <img src="${BANNER}" width="780px" alt="BuildFastWithAI: Master Generative AI">`
+    `    <img src="${BANNER}" width="100%" alt="Agent Skills by Build Fast with AI">`
   );
   L.push('  </a>');
   L.push('</p>');

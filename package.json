@@ -1,5 +1,5 @@
 {
-  "name": "@AnshumanSakhare/agent-skills",
+  "name": "@buildfastwithai/agent-skills",
   "version": "1.0.0",
   "description": "32 production-grade Agent Skills for Claude Code, Cowork, Codex and Cursor \u2014 installable with a single npx command.",
   "keywords": [
@@ -37,6 +37,7 @@
   "files": [
     "bin",
     "skills",
+    "assets",
     "skills.json",
     "README.md",
     "LICENSE"

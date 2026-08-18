@@ -67,19 +67,25 @@ function parseFrontmatter(text) {
 function checkLinks(id, file) {
   const dir = path.dirname(file);
   const text = fs.readFileSync(file, 'utf8');
-  const rx = /\[[^\]]*\]\(([^)\s]+)\)/g;
-  let m;
-  while ((m = rx.exec(text))) {
-    const target = m[1];
-    if (/^(https?:|mailto:|#|<)/.test(target)) continue;
+
+  const check = (target, kind) => {
+    if (/^(https?:|mailto:|data:|#|<)/.test(target)) return;
     // ignore documentation placeholders like [Title](URL) or [name](PATH)
-    if (/^[A-Z_]+$/.test(target)) continue;
+    if (/^[A-Z_]+$/.test(target)) return;
     const clean = target.split('#')[0];
-    if (!clean) continue;
+    if (!clean) return;
     if (!fs.existsSync(path.resolve(dir, clean))) {
-      err(id, `broken relative link in ${path.basename(file)} -> ${target}`);
+      err(id, `broken ${kind} in ${path.basename(file)} -> ${target}`);
     }
-  }
+  };
+
+  const link = /\[[^\]]*\]\(([^)\s]+)\)/g;
+  let m;
+  while ((m = link.exec(text))) check(m[1], 'relative link');
+
+  // the header/footer banner is a local asset, so catch it moving or vanishing
+  const img = /<img\s[^>]*src=["']([^"']+)["']/gi;
+  while ((m = img.exec(text))) check(m[1], 'image path');
 }
 
 const folders = fs
