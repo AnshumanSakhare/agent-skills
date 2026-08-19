@@ -1,10 +1,4 @@
 <p align="center">
-  <a href="https://www.buildfastwithai.com/">
-    <img src="assets/banner.jpg" width="100%" alt="Agent Skills by Build Fast with AI — 32 production-grade skills for Claude, Codex and Cursor">
-  </a>
-</p>
-
-<p align="center">
   <strong>Drop-in <code>SKILL.md</code> capabilities for your coding agent.<br>Six categories, one <code>npx</code> command, zero config.</strong>
 </p>
 
@@ -15,8 +9,8 @@
   <a href="https://twitter.com/BuildFastWithAI">
     <img src="https://img.shields.io/twitter/follow/BuildFastWithAI?style=social" alt="Twitter">
   </a>
-  <a href="https://github.com/AnshumanSakhare/agent-skills/stargazers">
-    <img src="https://img.shields.io/github/stars/AnshumanSakhare/agent-skills?style=social" alt="Star this repo">
+  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
+    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=social" alt="Star this repo">
   </a>
 </p>
 
@@ -33,16 +27,15 @@
 <p align="center">
   <a href="#quickstart"><b>Quickstart</b></a> &nbsp;·&nbsp;
   <a href="#the-catalog"><b>The catalog</b></a> &nbsp;·&nbsp;
-  <a href="#install-anywhere"><b>Install anywhere</b></a> &nbsp;·&nbsp;
-  <a href="#cli-reference"><b>CLI</b></a> &nbsp;·&nbsp;
-  <a href="CONTRIBUTING.md"><b>Contributing</b></a>
+  <a href="#use-it-in-any-agent"><b>Any agent</b></a> &nbsp;·&nbsp;
+  <a href="#faq"><b>FAQ</b></a>
 </p>
 
 ---
 
 Most "agent skills" you find online are one paragraph of advice in a markdown file. Some of these are more than that.
 
-**Ten of them are complete working systems** — reference docs the agent reads before it acts, executable scripts it runs, templates it fills, and worked example output you can open in a browser right now. Point Claude Code at `launchaudit-skill` and you get a real launch-readiness report with a verdict, not a bulleted opinion. Point it at `html-game-generator-skill` and you get a finished game in one HTML file, with menus and sound and save support.
+**Ten of them are more than a single file** — reference docs the agent reads before it acts, and in six cases executable scripts it actually runs. Three ship worked example output you can open in a browser right now. Point Claude Code at `launch-audit-skill` and you get a real launch-readiness report with a verdict, not a bulleted opinion. Point it at `html-game-generator-skill` and you get a finished game in one HTML file, with menus and sound and save support.
 
 **The other twenty-two are tight, opinionated playbooks** — one focused `SKILL.md` that gives the agent a real point of view on one job, from neo-brutalist art direction to Mongoose index strategy. Small on disk, and the ones you'll reach for daily.
 
@@ -52,172 +45,112 @@ Every skill carries a badge saying which kind it is, so you always know what you
 
 ## Quickstart
 
-**Pick skills interactively** — arrow keys, space to select, enter to install:
+Every skill installs with the open [`skills`](https://github.com/vercel-labs/skills) CLI — one command, nothing to clone:
 
 ```bash
-npx github:AnshumanSakhare/agent-skills
+npx skills add https://github.com/buildfastwithai/agent-skills/tree/main/skills/startup-skills/launch-audit-skill
 ```
 
-**Or grab exactly what you want:**
+Swap the trailing path for any skill in [the catalog](#the-catalog) below. Or take the whole registry at once and pick interactively:
 
 ```bash
-# one skill
-npx github:AnshumanSakhare/agent-skills add launchaudit-skill
-
-# a whole category
-npx github:AnshumanSakhare/agent-skills add --category design
-
-# everything, into Claude Code
-npx github:AnshumanSakhare/agent-skills add --all --client claude
+npx skills add buildfastwithai/agent-skills
 ```
 
 Then restart your agent and just talk to it:
 
 > *"Audit https://myproduct.com before launch."*
 
-No config file. No API key. No account. The installer auto-detects Claude Code, Codex, Cursor and opencode on your machine and installs into all of them.
+No config file. No API key. No account.
 
 <br>
 
 ## The catalog
 
-<!-- CATALOG:START -->
 
-### 🚀 Build & Ship <sub><sup>6 skills</sup></sub>
+### 🚀 App Builders <sub><sup>6 skills · <code>app-builder-skills/</code></sup></sub>
 
 *Point an agent at an idea and get a working, art-directed product back — not a scaffold.*
 
-| Skill | What it does | Install |
-|:--|:--|:--|
-| **[🛬 Landing Page Generator](skills/landing-page-generator-skill)** | High-converting landing pages as production HTML — with the conversion audit built in. | `add landing-page-generator-skill` |
-| **[🛒 Crazy Ecommerce Builder](skills/crazy-ecommerce-builder-skill)** | Anti-template storefronts with generated product photography and a real creative thesis. | `add crazy-ecommerce-builder-skill` |
-| **[🕹️ HTML Game Generator](skills/html-game-generator-skill)** | One self-contained .html file. Menus, art, sound, particles, save support. Double-click and play. | `add html-game-generator-skill` |
-| **[📸 React Screenshot Recreator](skills/react-screenshot-recreator-skill)** | Paste a screenshot. Get React + TypeScript + Tailwind that a designer can't tell apart. | `add react-screenshot-recreator-skill` |
-| **[✨ Premium UI Revamp](skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. | `add premium-ui-revamp-skill` |
-| **[🗣️ Talking Avatar](skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. | `add talking-avatar-skill` |
+| Skill | What it does |
+|:--|:--|
+| **[🛬 Landing Page Generator](skills/app-builder-skills/landing-page-generator-skill)** | High-converting landing pages as production HTML — with the conversion audit built in. |
+| **[🛒 Crazy Ecommerce Builder](skills/app-builder-skills/crazy-ecommerce-builder-skill)** | Anti-template storefronts with generated product photography and a real creative thesis. |
+| **[🕹️ HTML Game Generator](skills/app-builder-skills/html-game-generator-skill)** | One self-contained .html file. Menus, art, sound, particles, save support. Double-click and play. |
+| **[📸 React Screenshot Recreator](skills/app-builder-skills/react-screenshot-recreator-skill)** | Paste a screenshot. Get React + TypeScript + Tailwind that a designer can't tell apart. |
+| **[✨ Premium UI Revamp](skills/app-builder-skills/premium-ui-revamp-skill)** | Turns vibe-coded and visibly-AI-generated interfaces into something that looks intentional. |
+| **[🗣️ Talking Avatar](skills/app-builder-skills/talking-avatar-skill)** | A realtime voice app with a photo-real character whose mouth actually follows the audio. |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category build`</sub>
-
-### 🎨 Design Systems <sub><sup>8 skills</sup></sub>
+### 🎨 Design Systems <sub><sup>8 skills · <code>ui-skills/</code></sup></sub>
 
 *Opinionated art direction. Each one is a full aesthetic your agent can actually hold on to.*
 
-| Skill | What it does | Install |
-|:--|:--|:--|
-| **[🏛️ Boutique Frontend Designer](skills/boutique-frontend-designer-skill)** | The anti-slop default. Agency-grade interfaces instead of unmodified shadcn. | `add boutique-frontend-designer-skill` |
-| **[🧩 Tailwind Component Factory](skills/tailwind-component-factory-skill)** | Accessible, headless-friendly Tailwind primitives with the ARIA already correct. | `add tailwind-component-factory-skill` |
-| **[📣 Bold SaaS Marketing UI](skills/bold-saas-marketing-ui-skill)** | Landing pages that convert without looking like every other Y Combinator homepage. | `add bold-saas-marketing-ui-skill` |
-| **[📰 Editorial Web Layout](skills/editorial-web-layout-skill)** | Magazine typography, asymmetric columns, print rhythm. Content-first and confident. | `add editorial-web-layout-skill` |
-| **[🪟 Glass UI System](skills/glass-ui-system-skill)** | Glassmorphism with actual depth hierarchy — not a blur filter on everything. | `add glass-ui-system-skill` |
-| **[🕴️ Minimal Luxury UI](skills/minimal-luxury-ui-skill)** | Restraint as a design decision. Premium type, sparse composition, precise spacing. | `add minimal-luxury-ui-skill` |
-| **[🧱 Neo-Brutalism Web](skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. | `add neo-brutalism-web-skill` |
-| **[📺 Retro Futurist Web](skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. | `add retro-futurist-web-skill` |
+| Skill | What it does |
+|:--|:--|
+| **[🏛️ Boutique Frontend Designer](skills/ui-skills/boutique-frontend-designer-skill)** | The anti-slop default. Agency-grade interfaces instead of unmodified shadcn. |
+| **[🧩 Tailwind Component Factory](skills/ui-skills/tailwind-component-factory-skill)** | Accessible, headless-friendly Tailwind primitives with the ARIA already correct. |
+| **[📣 Bold SaaS Marketing UI](skills/ui-skills/bold-saas-marketing-ui-skill)** | Landing pages that convert without looking like every other Y Combinator homepage. |
+| **[📰 Editorial Web Layout](skills/ui-skills/editorial-web-layout-skill)** | Magazine typography, asymmetric columns, print rhythm. Content-first and confident. |
+| **[🪟 Glass UI System](skills/ui-skills/glass-ui-system-skill)** | Glassmorphism with actual depth hierarchy — not a blur filter on everything. |
+| **[🕴️ Minimal Luxury UI](skills/ui-skills/minimal-luxury-ui-skill)** | Restraint as a design decision. Premium type, sparse composition, precise spacing. |
+| **[🧱 Neo-Brutalism Web](skills/ui-skills/neo-brutalism-web-skill)** | Hard edges, stark contrast, raw type, deliberate friction. Loud on purpose. |
+| **[📺 Retro Futurist Web](skills/ui-skills/retro-futurist-web-skill)** | CRT scanlines, mono palettes, synth-era type — with 2026 usability underneath. |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category design`</sub>
-
-### 📈 Startup & Growth <sub><sup>3 skills</sup></sub>
+### 📈 Startup & Growth <sub><sup>3 skills · <code>startup-skills/</code></sup></sub>
 
 *Evidence-backed GTM work: who buys, whether you're ready, and how the money adds up.*
 
-| Skill | What it does | Install |
-|:--|:--|:--|
-| **[🔍 LaunchAudit](skills/launchaudit-skill)** | Give it a URL. Get a verdict: ready to launch, fix these first, or not yet. | `add launchaudit-skill` |
-| **[🎯 Customer Finder](skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. | `add customer-finder-skill` |
-| **[📊 Startup Blueprint](skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. | `add startup-blueprint-skill` |
+| Skill | What it does |
+|:--|:--|
+| **[🔍 LaunchAudit](skills/startup-skills/launch-audit-skill)** | Give it a URL. Get a verdict: ready to launch, fix these first, or not yet. |
+| **[🎯 Customer Finder](skills/startup-skills/customer-finder-skill)** | A shortlist of plausible first customers, each one linked to the public signal that found them. |
+| **[📊 Startup Blueprint](skills/startup-skills/startup-blueprint-skill)** | Business plan, pricing architecture, a real Excel financial model, and a 90-day roadmap. |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category growth`</sub>
-
-### 🧱 Backend & Data <sub><sup>4 skills</sup></sub>
+### 🧱 Backend & Data <sub><sup>4 skills · <code>backend-skills/</code></sup></sub>
 
 *Auth, schemas, route handlers and MCP servers that survive contact with production.*
 
-| Skill | What it does | Install |
-|:--|:--|:--|
-| **[🔌 MCP Server Builder](skills/mcp-server-builder-skill)** | Design and ship Model Context Protocol servers that don't leak your database. | `add mcp-server-builder-skill` |
-| **[🔐 MERN Auth Best Practices](skills/mern-auth-best-practices-skill)** | JWT and Auth.js flows with refresh rotation and cookie strategy that actually holds. | `add mern-auth-best-practices-skill` |
-| **[🗄️ Mongoose Schema Architect](skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. | `add mongoose-schema-architect-skill` |
-| **[⚡ Next.js Route Handler](skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. | `add nextjs-route-handler-skill` |
+| Skill | What it does |
+|:--|:--|
+| **[🔌 MCP Server Builder](skills/backend-skills/mcp-server-builder-skill)** | Design and ship Model Context Protocol servers that don't leak your database. |
+| **[🔐 MERN Auth Best Practices](skills/backend-skills/mern-auth-best-practices-skill)** | JWT and Auth.js flows with refresh rotation and cookie strategy that actually holds. |
+| **[🗄️ Mongoose Schema Architect](skills/backend-skills/mongoose-schema-architect-skill)** | Schemas designed backwards from your actual query patterns. |
+| **[⚡ Next.js Route Handler](skills/backend-skills/nextjs-route-handler-skill)** | Edge-compatible App Router endpoints, Zod-validated and safe by default. |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category backend`</sub>
-
-### 📝 Docs & Research <sub><sup>3 skills</sup></sub>
+### 📝 Docs & Research <sub><sup>3 skills · <code>docs-skills/</code></sup></sub>
 
 *Turn scattered sources and half-finished repos into something a stranger can read.*
 
-| Skill | What it does | Install |
-|:--|:--|:--|
-| **[📖 README Architect](skills/readme-architect-skill)** | Production-quality READMEs with badges, setup, usage and contribution guidance. | `add readme-architect-skill` |
-| **[🔬 Research Synthesizer](skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. | `add research-synthesizer-skill` |
-| **[🎞️ Deck Outline Generator](skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. | `add deck-outline-generator-skill` |
+| Skill | What it does |
+|:--|:--|
+| **[📖 README Architect](skills/docs-skills/readme-architect-skill)** | Production-quality READMEs with badges, setup, usage and contribution guidance. |
+| **[🔬 Research Synthesizer](skills/docs-skills/research-synthesizer-skill)** | Many sources in, one cited Markdown report out — with confidence notes. |
+| **[🎞️ Deck Outline Generator](skills/docs-skills/deck-outline-generator-skill)** | Slide outlines with a narrative spine — plus per-slide image prompts. |
 
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category docs`</sub>
-
-### 🛠️ Agent Workflow <sub><sup>8 skills</sup></sub>
+### 🛠️ Agent Workflow <sub><sup>8 skills · <code>workflow-skills/</code></sup></sub>
 
 *Meta-skills that make every other agent run tighter — critique, handoff, commits, test strength.*
 
-| Skill | What it does | Install |
-|:--|:--|:--|
-| **[🚢 Ship It](skills/ship-it-skill)** | Turns any repo into a public-facing open-source project ready for a launch tweet. | `add ship-it-skill` |
-| **[🤝 Claude → Codex Handoff](skills/claude-to-codex-handoff-skill)** | Package a whole conversation into a zip another agent can pick up cold. | `add claude-to-codex-handoff-skill` |
-| **[🧪 Test Strength](skills/test-strength-skill)** | Coverage lies. Mutation testing tells you whether your tests would notice a bug. | `add test-strength-skill` |
-| **[🕵️ Agent Output Critic](skills/agent-output-critic-skill)** | A second agent whose only job is to find what the first one got wrong. | `add agent-output-critic-skill` |
-| **[📌 Git Conventional Commits](skills/git-conventional-commits-skill)** | Commits that explain why, and PR descriptions with a real test plan. | `add git-conventional-commits-skill` |
-| **[🧠 Prompt Optimizer (CoT)](skills/prompt-optimizer-cot-skill)** | Rewrites vague tasks into prompts that reason properly. | `add prompt-optimizer-cot-skill` |
-| **[✅ Tool Use Validator](skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. | `add tool-use-validator-skill` |
-| **[🐧 Linux Kernel Troubleshooter](skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. | `add linux-kernel-troubleshooter-skill` |
-
-<sub>Install the whole category: `npx github:AnshumanSakhare/agent-skills add --category workflow`</sub>
-
-<!-- CATALOG:END -->
+| Skill | What it does |
+|:--|:--|
+| **[🚢 Ship It](skills/workflow-skills/ship-it-skill)** | Turns any repo into a public-facing open-source project ready for a launch tweet. |
+| **[🤝 Claude → Codex Handoff](skills/workflow-skills/claude-to-codex-handoff-skill)** | Package a whole conversation into a zip another agent can pick up cold. |
+| **[🧪 Test Strength](skills/workflow-skills/test-strength-skill)** | Coverage lies. Mutation testing tells you whether your tests would notice a bug. |
+| **[🕵️ Agent Output Critic](skills/workflow-skills/agent-output-critic-skill)** | A second agent whose only job is to find what the first one got wrong. |
+| **[📌 Git Conventional Commits](skills/workflow-skills/git-conventional-commits-skill)** | Commits that explain why, and PR descriptions with a real test plan. |
+| **[🧠 Prompt Optimizer (CoT)](skills/workflow-skills/prompt-optimizer-cot-skill)** | Rewrites vague tasks into prompts that reason properly. |
+| **[✅ Tool Use Validator](skills/workflow-skills/tool-use-validator-skill)** | Validate function-calling payloads against the schema before they execute. |
+| **[🐧 Linux Kernel Troubleshooter](skills/workflow-skills/linux-kernel-troubleshooter-skill)** | Boot failures, kernel panics and vanished network adapters — with the BIOS steps. |
 
 <br>
 
-## Install anywhere
+## Use it in any agent
 
-The installer finds every agent directory on your machine and installs into all of them. Want to be specific?
+These are plain [Agent Skills](https://code.claude.com/docs/en/skills) folders — a `SKILL.md` plus whatever it needs. Anything that reads that format can use them: Claude Code, Claude Desktop, Codex, Cursor, opencode.
 
-| Agent | Flag | Installs to |
-|:--|:--|:--|
-| **Claude Code** / Claude Desktop | `--client claude` | `~/.claude/skills` |
-| **OpenAI Codex** | `--client codex` | `~/.codex/skills` |
-| **Cursor** | `--client cursor` | `~/.cursor/skills` |
-| **opencode** | `--client opencode` | `~/.config/opencode/skills` |
-| **This project only** | `--client project` | `./.claude/skills` |
-| **Anything else** | `--dir <path>` | wherever you point it |
+The `skills` CLI detects what you have installed and puts the folder in the right place. If you'd rather not use it, copy the folder by hand — `git clone` this repo and drop `skills/<category>/<name>-skill` into your agent's skills directory. That's the whole install.
 
-Multiple at once works too: `--client claude,cursor`. Or hit all of them with `--client all`.
-
-Using **Cowork**? Skills there are account-level rather than on disk — install into `claude` to get the folder, then upload the skill folder from `~/.claude/skills/<name>-skill` in the Cowork UI.
-
-Prefer to do it by hand? Every skill is a plain folder — `git clone` this repo and copy `skills/<name>-skill` into your agent's skills directory. That's the whole install.
-
-<br>
-
-## CLI reference
-
-```bash
-npx github:AnshumanSakhare/agent-skills [command] [skills...] [options]
-```
-
-| Command | What it does |
-|:--|:--|
-| *(none)* | Interactive picker |
-| `list` | Print the full catalog |
-| `add <skill...>` | Install one or more skills |
-| `remove <skill...>` | Uninstall them again |
-| `doctor` | Show which agents were detected and what's installed |
-
-| Option | What it does |
-|:--|:--|
-| `--all` | Every skill in the registry |
-| `--category <id>` | `build` · `design` · `growth` · `backend` · `docs` · `workflow` |
-| `--client <id>` | `claude` · `codex` · `cursor` · `opencode` · `project` · `all` |
-| `--dir <path>` | Install into any directory |
-| `--json` | Machine-readable catalog (with `list`) |
-| `--verbose` | More detail (with `doctor`) |
-
-The `-skill` suffix is optional on the command line — `add launchaudit` and `add launchaudit-skill` both work.
+Using **Cowork**? Skills are account-level rather than on disk — install locally first, then upload the skill folder in the Cowork UI.
 
 <br>
 
@@ -226,15 +159,16 @@ The `-skill` suffix is optional on the command line — `add launchaudit` and `a
 A skill is a folder your agent reads *on demand*. It stays out of the context window until the description matches what you asked for, then the agent pulls in exactly the parts it needs.
 
 ```text
-launchaudit-skill/
+launch-audit-skill/
 ├── SKILL.md              ← the entry point: when to trigger, how to work
-├── README.md             ← human-facing docs (this is generated)
+├── README.md             ← human-facing docs
 ├── references/           ← deep context the agent reads before acting
 │   ├── evaluation-framework.md
 │   └── report-schema.md
 ├── scripts/              ← real code the agent executes
 │   └── generate_report.mjs
 ├── templates/            ← output scaffolding
+├── agents/               ← an openai.yaml for Codex
 └── examples/             ← a finished report you can open right now
 ```
 
@@ -242,10 +176,12 @@ launchaudit-skill/
 
 ```yaml
 ---
-name: launchaudit-skill
-description: Audits a startup from its URL and decides whether it is ready to
-  launch. Use when the user asks for a launch readiness check, a pre-launch
-  review, a conversion audit, or whether their site is ready to ship.
+name: launch-audit-skill
+description: Audit a startup, SaaS, app, developer tool, landing page, or
+  product before launch from a live URL, localhost page, repository,
+  screenshots, or supplied copy. Use when the user needs to test whether a
+  public experience is launch-ready, produce a Ready to launch / Launch after
+  critical fixes / Not ready yet verdict, or create a standalone HTML report.
 ---
 ```
 
@@ -259,44 +195,31 @@ The format is Anthropic's [Agent Skills](https://code.claude.com/docs/en/skills)
 
 ```text
 agent-skills/
-├── skills/               32 skills, one folder each, all <name>-skill
-├── bin/agent-skills.js   the zero-dependency installer
-├── scripts/
-│   ├── validate.mjs      CI: frontmatter, naming, links, manifest
-│   └── generate-docs.mjs CI: regenerates every README from skills.json
-├── skills.json           the registry — single source of truth
-└── assets/banner.jpg     the header artwork
+├── README.md             this file — the catalog
+└── skills/               32 skills, grouped by category
+    ├── app-builder-skills/   6   finished, runnable products
+    ├── ui-skills/            8   design systems and art direction
+    ├── startup-skills/       3   GTM, launch readiness, financials
+    ├── backend-skills/       4   APIs, schemas, auth
+    ├── docs-skills/          3   READMEs and research synthesis
+    └── workflow-skills/      8   agent tooling and process
 ```
 
-Every README in this repo is generated from `skills.json`. Change the manifest, run `npm run docs`, and the catalog table plus all 32 skill READMEs update together. CI fails if they drift.
-
-```bash
-npm run validate   # naming convention, frontmatter, broken links, orphans
-npm run docs       # regenerate all READMEs
-npm run check      # both, in --check mode (what CI runs)
-```
-
-Moving the project to a different GitHub account or org? The slug lives in `skills.json` and the CLI reads it at runtime, so it's one command:
-
-```bash
-npm run set-repo -- neworg/agent-skills
-git remote set-url origin https://github.com/neworg/agent-skills.git
-```
+That's the whole repo. No build step, no manifest, no installer to maintain — each skill folder is self-describing, and the `skills` CLI reads them directly off GitHub.
 
 <br>
 
 ## Contributing
 
-New skills are very welcome — especially ones that *do* something rather than describe something.
+New skills are welcome — especially ones that *do* something rather than describe something.
 
-The bar: a real `SKILL.md` with a trigger description that earns its place, at least one worked example, and it has to pass `npm run validate`. Full details in **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+The bar: a real `SKILL.md` whose `description` earns its trigger, and at least one worked example.
 
 ```bash
-git clone https://github.com/AnshumanSakhare/agent-skills
+git clone https://github.com/buildfastwithai/agent-skills
 cd agent-skills
-mkdir -p skills/my-thing-skill        # note the -skill suffix
-# write SKILL.md, add an entry to skills.json
-npm run docs && npm run validate
+mkdir -p skills/<category>/my-thing-skill   # note the -skill suffix
+# write SKILL.md, add a row to the catalog table, open a PR
 ```
 
 <br>
@@ -306,13 +229,13 @@ npm run docs && npm run validate
 <details>
 <summary><b>Do I need to install npm packages or an API key?</b></summary>
 <br>
-No. The installer is a single zero-dependency Node file that copies folders. Nothing phones home, nothing needs a key, nothing runs in the background.
+No. <code>npx skills</code> just copies folders into your agent's skills directory. Nothing phones home, nothing needs a key, nothing runs in the background.
 </details>
 
 <details>
 <summary><b>Will these work outside Claude Code?</b></summary>
 <br>
-Yes. They follow the open Agent Skills <code>SKILL.md</code> format, which Codex, Cursor and opencode also read. A few skills bundle an <code>agents/openai.yaml</code> for Codex specifically. For anything else that reads a skills directory, use <code>--dir</code>.
+Yes. They follow the open Agent Skills <code>SKILL.md</code> format, which Codex, Cursor and opencode also read. A few skills bundle an <code>agents/openai.yaml</code> for Codex specifically. For anything else, copy the folder in by hand.
 </details>
 
 <details>
@@ -324,13 +247,13 @@ Off the <code>description</code> in the frontmatter — that one line is the onl
 <details>
 <summary><b>How do I update?</b></summary>
 <br>
-Run the same <code>add</code> command again. Installs overwrite in place, so re-running is how you upgrade.
+Run the same <code>add</code> command again — it overwrites in place, so re-running is how you upgrade.
 </details>
 
 <details>
-<summary><b>Can I install just one category?</b></summary>
+<summary><b>Can I install more than one at a time?</b></summary>
 <br>
-<code>npx github:AnshumanSakhare/agent-skills add --category growth</code> — and the same for <code>build</code>, <code>design</code>, <code>backend</code>, <code>docs</code> and <code>workflow</code>.
+Yes — <code>npx skills add buildfastwithai/agent-skills</code> pulls the whole registry and lets you pick from a list.
 </details>
 
 <details>
@@ -343,7 +266,37 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
 
 ## License
 
-[MIT](LICENSE). Use them, fork them, ship things with them.
+MIT. Use them, fork them, ship things with them.
+
+<details>
+<summary>Full MIT license text</summary>
+<br>
+
+```text
+MIT License
+
+Copyright (c) 2026 Build Fast with AI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+</details>
 
 <br>
 
@@ -352,8 +305,8 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
 <h3 align="center">If one of these saved you an afternoon, a star helps other people find them.</h3>
 
 <p align="center">
-  <a href="https://github.com/AnshumanSakhare/agent-skills/stargazers">
-    <img src="https://img.shields.io/github/stars/AnshumanSakhare/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=D97757&labelColor=000000&label=star%20agent-skills" alt="Star agent-skills">
+  <a href="https://github.com/buildfastwithai/agent-skills/stargazers">
+    <img src="https://img.shields.io/github/stars/buildfastwithai/agent-skills?style=for-the-badge&logo=github&logoColor=white&color=D97757&labelColor=000000&label=star%20agent-skills" alt="Star agent-skills">
   </a>
 </p>
 
@@ -370,7 +323,6 @@ Into your working directory, usually an <code>outputs/</code> folder, with click
   <sub>
     Built by <a href="https://www.buildfastwithai.com/"><b>Build Fast with AI</b></a>
     &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/gen-ai-experiments">Gen-AI-Experiments</a>
-    &nbsp;·&nbsp; <a href="CONTRIBUTING.md">Contribute a skill</a>
-    &nbsp;·&nbsp; <a href="https://github.com/AnshumanSakhare/agent-skills/issues/new?template=new-skill.yml">Request one</a>
+    &nbsp;·&nbsp; <a href="https://github.com/buildfastwithai/agent-skills/issues/new">Request a skill</a>
   </sub>
 </p>
